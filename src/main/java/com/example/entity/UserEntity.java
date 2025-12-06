@@ -1,6 +1,6 @@
 package com.example.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -38,22 +38,27 @@ public class UserEntity {
     
     public UserEntity() {}
     
-    public UserEntity(String userName, String userEmail, Integer userAge) {
-        this.userName = userName;
-        this.userEmail = userEmail;
-        this.userAge = userAge;
+    public UserEntity(String myUserName, String myUserEmail, Integer myUserAge) {
+        this.userName = myUserName;
+        this.userEmail = myUserEmail;
+        this.userAge = myUserAge;
     }
     
     public Long getUserId() { return userId; }
-    public void setUserId(Long userId) { this.userId = userId; }
+    public void setUserId(Long myUserId) { this.userId = myUserId; }
+    
     public String getUserName() { return userName; }
-    public void setUserName(String userName) { this.userName = userName; }
+    public void setUserName(String myUserName) { this.userName = myUserName; }
+    
     public String getUserEmail() { return userEmail; }
-    public void setUserEmail(String userEmail) { this.userEmail = userEmail; }
+    public void setUserEmail(String myUserEmail) { this.userEmail = myUserEmail; }
+    
     public Integer getUserAge() { return userAge; }
-    public void setUserAge(Integer userAge) { this.userAge = userAge; }
+    public void setUserAge(Integer myUserAge) { this.userAge = myUserAge; }
+    
     public LocalDateTime getUserCreatedAt() { return userCreatedAt; }
-    public void setUserCreatedAt(LocalDateTime userCreatedAt) { this.userCreatedAt = userCreatedAt; }
+    public void setUserCreatedAt(LocalDateTime myUserCreatedAt) { this.userCreatedAt = myUserCreatedAt; }
+    
     public Long getVersionNumber() { return versionNumber; }
     
     @Override
